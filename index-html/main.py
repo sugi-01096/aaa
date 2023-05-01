@@ -4,8 +4,8 @@ st.title('ダメージ計算')
 st.sidebar.header("ポケモンの情報")
 level = st.sidebar.slider("レベル", 1, 100, 50)
 attack_type = st.sidebar.selectbox("攻撃ポケモンのタイプ", ["ノーマル", "ほのお", "みず", "でんき", "くさ", "こおり", "かくとう", "どく", "じめん", "ひこう", "エスパー", "むし", "いわ", "ゴースト", "ドラゴン", "あく", "はがね", "フェアリー"])
-attack_stat = st.sidebar.slider("攻撃力", 0, 400, 200)
-defense_stat = st.sidebar.slider("防御力", 0, 400, 150)
+attack_stat = st.sidebar.slider("こうげき/とくこう", 0, 400, 200)
+defense_stat = st.sidebar.slider("ぼうぎょ/とくぼう", 0, 400, 150)
 
 # 技の情報を入力するフォームを作成する
 st.sidebar.header("技の情報")
